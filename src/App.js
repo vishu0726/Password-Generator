@@ -80,7 +80,7 @@ const App = () => {
     }
     else {
       copyToClipboard(password)
-      notify(COPY_SUCCESS)
+      notify(COPY_SUCCESS, true)
     }
 
   }
@@ -94,8 +94,8 @@ const App = () => {
           </h2>
           <div className="generator__password">
             <h3 >{password}</h3>
-            <button className="copy__btn">
-              <i onClick={handleCopyPassword} className="far fa-clipboard"></i>
+            <button className="copy__btn" onClick={handleCopyPassword}>
+              <i  className="far fa-clipboard"></i>
             </button>
           </div>
           <div className="form-group">

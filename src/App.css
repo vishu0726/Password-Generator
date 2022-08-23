@@ -29,9 +29,10 @@
   border-radius: 10px;
 }
 .copy__btn{
-  color: #fff;
-  background: #0e11c4;
-  border: none;
+  /* color: #fff; */
+  /* background: #101010; */
+  /* border: rgb(198, 190, 190); */
+  width: 10%;
   cursor: pointer;
 }
 .generator__btn{
