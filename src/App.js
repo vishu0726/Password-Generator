@@ -7,7 +7,7 @@ import { COPY_Fail, COPY_SUCCESS } from './message';
 
 const App = () => {
   const [password, setPassword] = useState("");
-  const [passwordLength, setPasswordLength] = useState(26);
+  const [passwordLength, setPasswordLength] = useState(18);
   const [includeUpperCase, setIncludeUpperCase] = useState(false);
   const [includeLowerCase, setIncludeLowerCase] = useState(false);
   const [includeNumbers, setIncludeNumbers] = useState(false);
@@ -100,7 +100,7 @@ const App = () => {
           </div>
           <div className="form-group">
             <label htmlFor="password-strength">Password length</label>
-            <input className="pw" defaultValue={passwordLength} onChange={(e) => setPasswordLength(e.target.value)} type="number" id="password-stregth" name="password-strength" max="26" min="8" />
+            <input className="pw" defaultValue={passwordLength} onChange={(e) => setPasswordLength(e.target.value)} type="number" id="password-stregth" name="password-strength" max="18" min="8" />
           </div>
           <div className="form-group">
             <label htmlFor="uppercase-letters">Add Uppercase Letters</label>
