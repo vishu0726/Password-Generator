@@ -8,10 +8,13 @@
 
 .generator{
   
-  background-color: rgb(103, 240, 128);
+  background-color: rgb(77, 90, 80);
   border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(230, 163, 163, 0.863);
+  box-shadow: 0px 2px 10px rgba(174, 19, 19, 0.863);
   padding: 30px;
+  width: 120%;
+  /* height: 180%; */
+  align-items: center;
 }
 .generator__header{
   text-align: center;
@@ -19,7 +22,7 @@
   margin-bottom: 20px;
 }
 .generator__password{
-  background-color:#19deec;
+  background-color:#b2c6c7;
   padding: 13px 10px;
   color: rgb(15, 13, 13);
   margin-bottom: 15px;
@@ -29,14 +32,11 @@
   border-radius: 10px;
 }
 .copy__btn{
-  /* color: #fff; */
-  /* background: #101010; */
-  /* border: rgb(198, 190, 190); */
   width: 10%;
   cursor: pointer;
 }
 .generator__btn{
-  background: #1446d2;
+  background: #95d363;
   border: none;
   width: 100%;
   margin-top: 10px;
