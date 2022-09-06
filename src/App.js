@@ -14,7 +14,7 @@ const App = () => {
   const [includeSymbols, setIncludeSymbols] = useState(false);
   const handleGeneratePassword = () => {
     if (!includeUpperCase && !includeLowerCase && !includeNumbers && !includeSymbols) {
-      notify("To generate password you must select atleast one checkbox", true);
+      updater("To generate password you must select atleast one checkbox", true);
     }
     else {
       let characterList = "";
@@ -31,7 +31,7 @@ const App = () => {
         characterList = characterList + specialCharacters;
       }
       setPassword(createPassword(characterList))
-      notify("Your password is ready", false);
+      updater("Your password is ready", false);
     }
 
 
@@ -49,7 +49,7 @@ const App = () => {
 
     navigator.clipboard.writeText(password);
   }
-  const notify = (message, hasError = false) => {
+  const updater = (message, hasError = false) => {
     if (hasError) {
       toast.error(message, {
         position: "top-center",
@@ -76,11 +76,11 @@ const App = () => {
   }
   const handleCopyPassword = (e) => {
     if (password === "") {
-      notify(COPY_Fail, true)
+      updater(COPY_Fail, true)
     }
     else {
       copyToClipboard(password)
-      notify(COPY_SUCCESS, true)
+      updater(COPY_SUCCESS, true)
     }
 
   }
